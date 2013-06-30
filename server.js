@@ -14,7 +14,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 require("./drone/camera-feed");
-//require("./drone/controller");
+require("./drone/controller");
 
 app.listen(3000);
 
