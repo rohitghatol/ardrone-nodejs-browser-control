@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f188893c-2c4c-444d-a925-084a4f6d4970" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/drone-feed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ardrone-nodejs-browser-control.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="f188893c-2c4c-444d-a925-084a4f6d4970" time="1372550629709" ignored="false" />
     <file path="/index.html" changelist="f188893c-2c4c-444d-a925-084a4f6d4970" time="1372552841263" ignored="false" />
+    <file path="/drone-feed.html" changelist="f188893c-2c4c-444d-a925-084a4f6d4970" time="1372553554053" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.3726708">
+            <state line="16" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -67,16 +68,16 @@
       <file leaf-file-name="camera-feed.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drone/camera-feed.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="8" column="34" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nodecopter-client.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="nodecopter-client.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/nodecopter-client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="265" column="16" selection-start="245627" selection-end="245630" vertical-scroll-proportion="-8.047934">
               <folding />
             </state>
           </provider>
@@ -85,9 +86,20 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="34" selection-start="2860" selection-end="2860" vertical-scroll-proportion="-15.18">
+            <state line="11" column="36" selection-start="307" selection-end="323" vertical-scroll-proportion="-3.3">
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drone-feed.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/drone-feed.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="78" selection-start="324" selection-end="324" vertical-scroll-proportion="-7.5">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,6 +126,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/drone/camera-feed.js" />
+        <option value="$PROJECT_DIR$/public/drone-feed.html" />
+        <option value="$PROJECT_DIR$/public/nodecopter-client.js" />
       </list>
     </option>
   </component>
@@ -203,7 +218,27 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -312,13 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/nodecopter-client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drone/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -326,25 +354,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drone/camera-feed.js">
+    <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="34" selection-start="2860" selection-end="2860" vertical-scroll-proportion="-15.18">
+        <state line="11" column="36" selection-start="307" selection-end="323" vertical-scroll-proportion="-3.3">
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/drone/camera-feed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.3726708">
+        <state line="8" column="34" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/drone-feed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="78" selection-start="324" selection-end="324" vertical-scroll-proportion="-7.5">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/nodecopter-client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="265" column="16" selection-start="245627" selection-end="245630" vertical-scroll-proportion="-8.047934">
           <folding />
         </state>
       </provider>
