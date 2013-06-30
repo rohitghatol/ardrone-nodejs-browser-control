@@ -35,40 +35,42 @@
                 navigator.getUserMedia(constraints, successCallback, errorCallback);
 
             }
+            function startArDroneController(){
+                var socket = io.connect('http://localhost:3002');
+                socket.on('connect', function () { // TIP: you can avoid listening on `connect` and listen on events directly too!
+                    console.log("Connection Successful");
 
+                });
+
+                socket.on('event', function (data) {
+
+                    if(data.name=="battery"){
+                        $("#battery-indicator").css('width',data.value+'%');
+                        $("#battery-value").html(data.value+'%');
+                    }
+                });
+
+                $("#takeoff").click(function(){
+                    console.log("Asking Server to send takeoff command to Ar Drone");
+                    socket.emit('event',{name:"takeoff"});
+                });
+                $("#spin").click(function(){
+                    console.log("Asking Server to send spin command to Ar Drone");
+                    socket.emit('event',{name:"spin"});
+                });
+                $("#stop").click(function(){
+                    console.log("Asking Server to send stop command to Ar Drone");
+                    socket.emit('event',{name:"stop"});
+                });
+                $("#land").click(function(){
+                    console.log("Asking Server to send land command to Ar Drone");
+                    socket.emit('event',{name:"land"});
+                });
+
+            }
             startArDRoneStream();
             startCameraFeed();
-
-            var socket = io.connect('http://localhost:3002');
-            socket.on('connect', function () { // TIP: you can avoid listening on `connect` and listen on events directly too!
-                console.log("Connection Successful");
-
-            });
-
-            socket.on('event', function (data) {
-
-                if(data.name=="battery"){
-                    $("#battery-indicator").css('width',data.value+'%');
-                    $("#battery-value").html(data.value+'%');
-                }
-            });
-
-            $("#takeoff").click(function(){
-                console.log("Asking Server to send takeoff command to Ar Drone");
-                socket.emit('event',{name:"takeoff"});
-            });
-            $("#spin").click(function(){
-                console.log("Asking Server to send spin command to Ar Drone");
-                socket.emit('event',{name:"spin"});
-            });
-            $("#stop").click(function(){
-                console.log("Asking Server to send stop command to Ar Drone");
-                socket.emit('event',{name:"stop"});
-            });
-            $("#land").click(function(){
-                console.log("Asking Server to send land command to Ar Drone");
-                socket.emit('event',{name:"land"});
-            });
+            startArDroneController();
 
         })
     </script>
@@ -143,8 +145,6 @@
         </td>
     </tr>
 </table>
-<script>
 
-</script>
 </body>
 </html>
